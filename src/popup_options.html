@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h2>Github Active Forks</h2>
+    <hr />
+    <h3 class="title">Options</h3>
+    <form id="options-form">
+      <div class="form-item">
+        <label for="display_count">Forks to Display</label>
+        <input
+          type="number"
+          id="display_count"
+          name="display_count"
+          min="1"
+          max="100"
+        />
+      </div>
+      <div class="form-item">
+        <label for="sort_mode">Sort by</label>
+        <select name="sort_mode" id="sort_mode">
+          <option value="stars">Stars</option>
+          <option value="last_commit">Last commit</option>
+          <option value="forks">Forks</option>
+        </select>
+      </div>
+      <button type="submit">Update</button>
+    </form>
+    <script src="./options.js"></script>
+  </body>
+</html>

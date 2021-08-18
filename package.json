@@ -1,0 +1,18 @@
+{
+  "name": "github-active-forks",
+  "version": "1.0.0",
+  "description": "Adds an active forks section on a Github Page",
+  "main": "content-script.js",
+  "author": "yashx",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^2.23.0"
+  },
+  "scripts": {
+    "build": "rm -r dist/*; parcel build src/{content-script.js,popup_options.html,background.js} && cp src/manifest.json dist/ && cp -r src/images dist/",
+    "pack": "rm release.zip; zip -r release.zip dist; "
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
