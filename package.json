@@ -9,6 +9,7 @@
     "date-fns": "^2.23.0"
   },
   "scripts": {
+    "build-debug": "rm -r dist/*; parcel build src/{content-script.js,popup_options.html,background.js} --no-minify && cp src/manifest.json dist/ && cp -r src/images dist/",
     "build": "rm -r dist/*; parcel build src/{content-script.js,popup_options.html,background.js} && cp src/manifest.json dist/ && cp -r src/images dist/",
     "pack": "rm release.zip; zip -r release.zip dist; "
   },

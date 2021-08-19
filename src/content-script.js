@@ -39,8 +39,8 @@ if (sidepanel != null) {
         }
       });
     },
-    () => {
-      displayError("Error in fetching forks", activeForksContainer);
+    (msg) => {
+      displayError(msg, activeForksContainer);
     }
   );
 
@@ -55,19 +55,23 @@ if (sidepanel != null) {
         return res.json();
       })
       .then((data) => {
-        let forks = [];
-        for (let fork of data) {
-          fork.last_push_date = new Date(fork.pushed_at);
-          fork.last_push_text = formatDistanceToNow(fork.last_push_date, {
-            addSuffix: true,
-          });
+        if (data.length == 0) {
+          onFail("No Forks found");
+        } else {
+          let forks = [];
+          for (let fork of data) {
+            fork.last_push_date = new Date(fork.pushed_at);
+            fork.last_push_text = formatDistanceToNow(fork.last_push_date, {
+              addSuffix: true,
+            });
 
-          forks.push(fork);
+            forks.push(fork);
+          }
+          onSuccess(forks);
         }
-        onSuccess(forks);
       })
       .catch((e) => {
-        onFail();
+        onFail("Error in fetching forks");
       });
   }
 
