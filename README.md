@@ -4,7 +4,7 @@ Chrome Extension that adds an active forks section on a Github Repository Page
 This project is inspired by [techgaun/active-forks](https://github.com/techgaun/active-forks)
 
 ### Installation
-You can install the extension from here
+You can install the extension from [Chrome Web Store](https://chrome.google.com/webstore/detail/github-active-forks/oflkkabfokadmncdbhdggeedngllccak)
 
 ### Features
 1. Select the number of forks you want to see. (Min 1 and Max 100)
