@@ -1,22 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 body {
-  min-width: 300px;
+  width: 300px;
   margin: 16px 8px 16px 8px;
 }
 
-.title {
-  margin-top: 2px;
-  margin-bottom: 4px;
+#options-form {
+  display: flex;
+  flex-direction: column;
 }
 
-button,
+h2 {
+  font-size: 1.5rem;
+}
+
+.title {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.form-item label {
+  font-size: 1rem;
+}
+
 input,
 select {
   display: block;
+  width: 100%;
+  font-size: 1rem;
+  padding: 4px 8px;
+  margin-top: 4px;
+}
+
+button {
+  cursor: pointer;
+  margin-top: 24px;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 80%;
+  align-self: center;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+button:active {
+  transform: scale(0.98);
 }
 
 .form-item {
