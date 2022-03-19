@@ -1,9 +1,7 @@
 import { formatDistanceToNow, compareDesc } from "date-fns";
 
 // Checking if there is a side panel on the page
-const sidepanel = document.querySelector(
-  "#repo-content-pjax-container > div > div.gutter-condensed.gutter-lg.flex-column.flex-md-row.d-flex > div.flex-shrink-0.col-12.col-md-3 > div"
-);
+const sidepanel = document.querySelector(".Layout-sidebar .BorderGrid");
 
 if (sidepanel != null) {
   // Adding the container in which to add repository forks
