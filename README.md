@@ -17,4 +17,5 @@ https://user-images.githubusercontent.com/20506602/130043111-9ea39056-3c90-43fb-
 
 ### Screenshots
 <img width="800px" src="https://user-images.githubusercontent.com/20506602/130043252-a445983b-c99b-48f7-a717-e4732fdf84d7.png"></img>
-<img width="400px" src="https://user-images.githubusercontent.com/20506602/130043261-00df415a-ff9b-49f7-8b75-342b7af118d6.png"></img>
+<img width="400px" src="https://user-images.githubusercontent.com/20506602/159121883-a54e3ad4-f27f-400f-b07f-c51fbf180e6f.png"></img>
+
